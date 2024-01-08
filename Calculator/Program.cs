@@ -12,6 +12,7 @@ namespace Calculator
         {
             Console.Clear();
             Console.WriteLine("Seja bem-vindo!\nDigite uma opção no menu!");
+            Console.WriteLine("---------------");
             Console.WriteLine("1 - Somar");
             Console.WriteLine("2 - Subtrair");
             Console.WriteLine("3 - Multiplicar");
