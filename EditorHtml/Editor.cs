@@ -11,8 +11,8 @@ namespace EditorHtml
         public static void Show()
         {
             Console.Clear();
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
             Console.WriteLine("MODO EDITOR");
             Console.WriteLine("------------");

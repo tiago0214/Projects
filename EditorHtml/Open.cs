@@ -10,16 +10,14 @@ namespace EditorHtml
         public static void Show()
         {
             Console.Clear();
-            Console.BackgroundColor = ConsoleColor.DarkGreen;
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
             Console.WriteLine("MODO DE VISUALIZAÇÃO");
             Console.WriteLine("------------");
             Abrir();
 
         }
-
-
         public static void Abrir()
         {
             //Console.Clear();
