@@ -25,15 +25,12 @@ Viewer:
 > - A classe **Viewer** é responsável por exibir o conteúdo do arquivo HTML.
 > - O método **Replace** substitui partes específicas do texto (marcadas com tags como \<blue>, \<red>, \<green>, \<yellow>) por cores correspondentes ao serem exibidas no console.
 
-#### Tags disponiveis
-
-**\<blue>\</blue>**
-
-**\<red>\</red>**
-
-**\<green>\</green>**
-
-**\<yellow>\</yellow>**
+| Tags Disponiveis        |
+| ----------------------- |
+| **\<blue>\</blue>**     |
+| **\<red>\</red>**       |
+| **\<green>\</green>**   |
+| **\<yellow>\</yellow>** |
 
 > O texto dentro da tag, fica de acordo com o nome da cor que esta escrita em inglês.
 
