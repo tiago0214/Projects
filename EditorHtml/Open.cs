@@ -30,7 +30,7 @@ namespace EditorHtml
             {
                 Console.Clear();
                 string texto = file.ReadToEnd();
-                Console.WriteLine(texto);
+                Viewer.Show(texto);
             }
             Console.ReadLine();
             Menu.Show();

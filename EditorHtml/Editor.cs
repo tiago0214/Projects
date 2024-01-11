@@ -40,7 +40,7 @@ namespace EditorHtml
             else
             {
                 //alterar aqui a chamada da função -> para apontar para o viewer
-                Viewer.Replace(textoConvertido);
+                Viewer.Show(textoConvertido);
                 Console.WriteLine("Obrigado por usar o programa. ");
                 Console.WriteLine("Precione qualquer tecla para sair. ");
                 Console.ReadKey();

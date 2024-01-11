@@ -11,8 +11,8 @@ namespace EditorHtml
         public static void Show(string text)
         {
             Console.Clear();
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
             Console.WriteLine("MODO VISUALIZAÇÃO HTML");
             Console.WriteLine("------------");
@@ -24,9 +24,66 @@ namespace EditorHtml
 
         public static void Replace(string text)
         {
-            var strong = new Regex(@$"<\s*strong[^>]*>(.*?)<\s*/\s*strong>");
-        }
-        //outro modo de testar, o indexOF do primeiro"<" e o ultimo index do > e tentar pegar tudo dentro 
+            var blue = new Regex(@$"<\s*blue[^>]*>(.*?)<\s*/\s*blue>");
+            var red = new Regex(@$"<\s*red[^>]*>(.*?)<\s*/\s*red>");
+            var green = new Regex(@$"<\s*green[^>]*>(.*?)<\s*/\s*green>");
+            var yellow = new Regex(@$"<\s*yellow[^>]*>(.*?)<\s*/\s*yellow>");
+            var words = text.Split(" ");
 
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (blue.IsMatch(words[i]))
+                {
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.Write(
+                        words[i].Substring(
+                            words[i].IndexOf('>') + 1,
+                            (words[i].LastIndexOf('<') - 1) - words[i].IndexOf('>')
+                        )
+                    );
+                    Console.Write(" ");
+                }
+                else if (red.IsMatch(words[i]))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write(
+                        words[i].Substring(
+                            words[i].IndexOf('>') + 1,
+                            (words[i].LastIndexOf('<') - 1) - words[i].IndexOf('>')
+                        )
+                    );
+                    Console.Write(" ");
+                }
+                else if (green.IsMatch(words[i]))
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(
+                        words[i].Substring(
+                            words[i].IndexOf('>') + 1,
+                            (words[i].LastIndexOf('<') - 1) - words[i].IndexOf('>')
+                        )
+                    );
+                    Console.Write(" ");
+                }
+                else if (yellow.IsMatch(words[i]))
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write(
+                        words[i].Substring(
+                            words[i].IndexOf('>') + 1,
+                            (words[i].LastIndexOf('<') - 1) - words[i].IndexOf('>')
+                        )
+                    );
+                    Console.Write(" ");
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.Write(words[i]);
+                    Console.Write(" ");
+                }
+            }
+        }
     }
 }
