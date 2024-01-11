@@ -1,29 +1,29 @@
 # Editor HTML
 
-A funcionalidade desse código é a manipulação de arquivos do tipo string, semelhando ao HTML
+A principal funcionalidade deste código é a manipulação de arquivos do tipo string, semelhante ao HTML.
 
-## O que as classe do código fazem
+## O que as classe implementadas fazem
 
 Menu:
 
-> - A classe menu é responsavel por exibir as opções principais do programa, como "Novo Arquivo", "Abrir" e "Sair".
-> - O método HandleMenuOption é responsável por direcionar o programa para a funcionalidade correspondente com base na opção escolhida.
+> - A classe **menu** é responsavel por exibir as opções principais do programa, como "Novo Arquivo", "Abrir" e "Sair".
+> - O método **HandleMenuOption** é responsável por direcionar o programa para a funcionalidade correspondente com base na opção escolhida.
 
 Editor:
 
-> - A classe Editor é responsável pela edição de arquivos HTML.
-> - O método Start permite ao usuário digitar o conteúdo do arquivo até pressionar a tecla "Escape".
-> - Em seguida, o programa pergunta se o usuário deseja salvar o arquivo. Se sim, ele é salvo; caso contrário, o conteúdo é exibido usando a classe Viewer
+> - A classe **Editor** é responsável pela edição de arquivos HTML.
+> - O método **Start** permite ao usuário digitar o conteúdo do arquivo até pressionar a tecla "Escape".
+> - Em seguida, o programa pergunta se o usuário deseja salvar o arquivo. Se sim, ele é salvo; caso contrário, o conteúdo é exibido usando a classe **Viewer**
 
 Abrir:
 
-> - A classe Open lida com a abertura de arquivos existentes.
-> - O método Abrir pede ao usuário o caminho do arquivo e exibe o conteúdo usando a classe Viewer
+> - A classe **Open** lida com a abertura de arquivos existentes.
+> - O método **Abrir** pede ao usuário o caminho do arquivo e exibe o conteúdo usando a classe Viewer
 
 Viewer:
 
-> - A classe Viewer é responsável por exibir o conteúdo do arquivo HTML.
-> - O método Replace substitui partes específicas do texto (marcadas com tags como \<blue>, \<red>, \<green>, \<yellow>) por cores correspondentes ao serem exibidas no console.
+> - A classe **Viewer** é responsável por exibir o conteúdo do arquivo HTML.
+> - O método **Replace** substitui partes específicas do texto (marcadas com tags como \<blue>, \<red>, \<green>, \<yellow>) por cores correspondentes ao serem exibidas no console.
 
 #### Tags disponiveis
 
