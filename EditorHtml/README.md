@@ -2,7 +2,7 @@
 
 A principal funcionalidade deste código é a manipulação de arquivos do tipo string, semelhante ao HTML.
 
-## O que as classe implementadas fazem
+## O que as classes implementadas fazem
 
 Menu:
 
