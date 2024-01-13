@@ -79,7 +79,7 @@ namespace EditorHtml
                 }
                 else
                 {
-                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.ForegroundColor = ConsoleColor.White;
                     Console.Write(words[i]);
                     Console.Write(" ");
                 }
