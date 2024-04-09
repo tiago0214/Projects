@@ -1,1 +1,1 @@
-## Todos os projetos tem o seu respectivo README, explicando os métodos que foram desenvolvidos em cada um.
+## All projects have their respective README, explaining the methods that were developed in each one.
